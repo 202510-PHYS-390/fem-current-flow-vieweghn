@@ -11,17 +11,17 @@ import subprocess
 
 # Geometry (mm)
 pcb_width = 50.0
-pcb_height = 40.0
+pcb_height = 150.0
 
 # Power traces
 reg_trace_width = 3.5
-bus_width = 2.5
-branch_width = 1.5
+bus_width = 3.5
+branch_width = bus_width
 
 # Load positions (two parallel resistive loads)
 # These mark where branches connect to the top of resistors
-load1_pos = (25.0, 15.0)  # Moved up to make resistors taller
-load2_pos = (35.0, 15.0)
+load1_pos = (25.0, 78.0)  # Moved up to make resistors taller
+load2_pos = (35.0, 78.0)
 
 # Ground
 ground_y = 5.0
@@ -31,7 +31,7 @@ ground_height = 4.0
 # R_2D = L / (σ_eff * w) where σ_eff = 2086 S
 resistor1_width = 0.2  # mm - 200 µm wide (lower resistance)
 resistor2_width = 0.1  # mm - 100 µm wide (higher resistance, 2x current density)
-resistor_length = 20.0  # mm
+resistor_length = 150.0  # mm
 
 # Material (uniform copper everywhere!)
 copper_thickness = 0.035  # mm
