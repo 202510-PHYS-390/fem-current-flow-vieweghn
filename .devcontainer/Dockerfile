@@ -274,5 +274,11 @@ RUN mkdir -p /workspace/simulations \
 # Expose VNC and noVNC ports
 EXPOSE 5901 6080
 
+RUN apt-get update && apt-get install -y \
+    zip \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+
 # Default command (will be overridden by devcontainer.json)
 CMD ["/bin/bash"]
