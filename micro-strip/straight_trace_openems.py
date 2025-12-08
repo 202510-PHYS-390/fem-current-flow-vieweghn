@@ -59,7 +59,7 @@ EXCITATION_BW = 0.01e9   # 10 MHz bandwidth (for gaussian types)
 PULSE_WIDTH = 5.0e-9     # 5 nanoseconds (for square_pulse types)
 
 # Load resistance
-LOAD_RESISTANCE = 50.0   # Try: 0 (short), 50 (matched), 1000 (open)
+LOAD_RESISTANCE = 1000.0   # Try: 0 (short), 50 (matched), 1000 (open)
 
 # Simulation settings
 MAX_TIMESTEPS = 23000    # Number of timesteps to run
