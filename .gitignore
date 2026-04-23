@@ -6,6 +6,7 @@
 *.xml
 **/*.csv
 **/tmp/
+**/output_*
 
 # Simulation directories (OpenEMS and ElmerFEM)
 *_sim/
